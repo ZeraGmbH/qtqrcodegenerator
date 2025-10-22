@@ -27,7 +27,6 @@
 #include <QHBoxLayout>
 #include <QLineEdit>
 #include <QPushButton>
-
 #include <QrCodeGenerator.h>
 
 class MainWindow : public QMainWindow
@@ -36,7 +35,6 @@ class MainWindow : public QMainWindow
 
 public:
   explicit MainWindow();
-  ~MainWindow();
 
 private Q_SLOTS:
   void saveQrCode();
