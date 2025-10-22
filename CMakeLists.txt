@@ -13,9 +13,9 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 include(GenerateExportHeader)
 
-find_package(Qt5 COMPONENTS Core Gui Svg CONFIG REQUIRED)
+find_package(Qt5 COMPONENTS Core Gui Svg Quick QuickControls2 Qml CONFIG REQUIRED)
 
-add_subdirectory(src)
+add_subdirectory(lib)
 add_subdirectory(examples)
 
 write_basic_package_version_file(

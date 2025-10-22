@@ -23,7 +23,6 @@ target_link_libraries(qtqrcode
 target_include_directories(qtqrcode
     PUBLIC
     $<INSTALL_INTERFACE:include/qtqrcode>
-    $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}>
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     )
 
