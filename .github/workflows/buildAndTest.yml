@@ -2,8 +2,8 @@ name: build and unittest
 on:
   pull_request:
     branches:
-      - master
       - main
+      - zenux
   workflow_dispatch:
   
 jobs:
