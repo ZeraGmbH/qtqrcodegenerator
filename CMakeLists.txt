@@ -16,7 +16,7 @@ include(GenerateExportHeader)
 find_package(Qt5 COMPONENTS Core Gui Svg CONFIG REQUIRED)
 
 add_subdirectory(src)
-add_subdirectory(example)
+add_subdirectory(examples)
 
 write_basic_package_version_file(
     QtQrcodeVersion.cmake
