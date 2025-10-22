@@ -1,3 +1,4 @@
+#include "qrcodeitem.h"
 #include "qrcodeqmlimageprovider.h"
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
@@ -11,6 +12,7 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
 
     engine.addImageProvider(QLatin1String("qrcodeprovider"), new QRCodeQmlImageProvider);
+    qmlRegisterType<QRCodeItem>("QRCode", 1, 0, "QRCodeItem");
 
     const QUrl url(QStringLiteral("qrc:/qml/main.qml"));
     QObject::connect(

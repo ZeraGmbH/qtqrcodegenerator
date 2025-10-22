@@ -3,6 +3,7 @@ import QtQuick.Window 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Controls.Material 2.14
 import QtQuick.Layouts 1.14
+import QRCode 1.0
 
 ApplicationWindow {
     id: appWnd
@@ -30,9 +31,14 @@ ApplicationWindow {
             }
         }
     }
-    Image {
+    QRCodeItem {
+        anchors.fill: parent
+        qrCodeText: qrCodeTextField.text
+    }
+
+    /*Image {
         anchors.fill: parent
         fillMode: Image.PreserveAspectFit
         source: "image://qrcodeprovider/" + qrCodeTextField.text
-    }
+    }*/
 }
