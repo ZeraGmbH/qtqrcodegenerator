@@ -20,8 +20,6 @@
  * THE SOFTWARE.
  */
 
-#include <sstream>
-#include <string>
 #include <QPainter>
 #include <QTextStream>
 #include <QSvgRenderer>
